@@ -11,22 +11,22 @@
   </div>
   <!-- /.card-header -->
   <div class="card-body">
-    <table id="example1" class="table table-bordered table-striped">
+    <table id="example1" class="table table-striped">
       <thead>
-      <tr>
-        <th>id</th>
-        <th>judul</th>
-        <th>isi</th>
-        <th>action</th>
+      <tr class="row">
+        <th class="col-sm-1">id</th>
+        <th class="col-sm-4">judul</th>
+        <th class="col-sm-4">isi</th>
+        <th class="col-sm-3">action</th>
       </tr>
       </thead>
       <tbody>
       @foreach($pertanyaan as $tiap)
-      <tr>
-        <td>{{$tiap->id}}</td>
-        <td>{{$tiap->judul}}</td>
-        <td>{{$tiap->isi}}</td>
-        <td>
+      <tr class="row">
+        <td class="col-sm-1">{{$tiap->id}}</td>
+        <td class="col-sm-4">{{$tiap->judul}}</td>
+        <td class="col-sm-4">{{$tiap->isi}}</td>
+        <td class="col-sm-3">
           <div class="container d-flex">
             <a href="/jawaban/{{$tiap->id}}"><button class="btn-xm btn-info m-1">Jawab</button></a>
             <a href="/pertanyaan/{{$tiap->id}}/edit"><button class="btn-xm btn-warning m-1">Edit</button></a>
